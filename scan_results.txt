@@ -1,0 +1,22 @@
+# Nmap 7.94 scan initiated Mon Jun 23 11:48:00 2025 as: nmap -sS 192.168.1.0/24
+Nmap scan report for 192.168.1.1
+Host is up (0.0030s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+
+Nmap scan report for 192.168.1.10
+Host is up (0.0020s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+
+Nmap scan report for 192.168.1.15
+Host is up (0.0015s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 4.12 seconds

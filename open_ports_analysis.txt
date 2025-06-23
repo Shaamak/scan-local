@@ -1,0 +1,71 @@
+Common Services Running on Detected Open Ports
+Port 22/tcp (SSH)
+Service: Secure Shell (SSH)
+
+Purpose: Provides encrypted remote login and command execution between computers over a network. Commonly used by system administrators for secure remote management of servers and devices.
+
+Port 80/tcp (HTTP)
+Service: Hypertext Transfer Protocol (HTTP)
+
+Purpose: Used for unencrypted web traffic; delivers web pages from a server to a browser. It is the standard port for web servers hosting websites.
+
+Port 443/tcp (HTTPS)
+Service: Hypertext Transfer Protocol Secure (HTTPS)
+
+Purpose: Used for encrypted web traffic; ensures secure communication between web browsers and servers using SSL/TLS certificates. It is the standard for secure websites.
+
+
+Potential Security Risks from Open Ports
+Port 22/tcp (SSH)
+Risks:
+
+Susceptible to brute-force attacks if weak passwords are used.
+
+If exposed to the internet, attackers may attempt unauthorized access.
+
+Outdated SSH software can have vulnerabilities.
+
+Mitigations:
+
+Use strong, unique passwords or SSH keys.
+
+Restrict access to trusted IP addresses.
+
+Keep SSH software updated.
+
+Consider changing the default port or using additional protections like fail2ban.
+
+Port 80/tcp (HTTP)
+Risks:
+
+Transmits data in plaintext, making it vulnerable to interception and eavesdropping.
+
+Exposed web servers can be targeted for attacks such as SQL injection, cross-site scripting (XSS), and other web vulnerabilities.
+
+May reveal sensitive information about the server or application if not properly configured.
+
+Mitigations:
+
+Redirect HTTP traffic to HTTPS.
+
+Regularly update and patch web server software.
+
+Use web application firewalls and secure coding practices.
+
+Port 443/tcp (HTTPS)
+Risks:
+
+While encrypted, vulnerabilities can exist if SSL/TLS configurations are weak or outdated.
+
+Misconfigured certificates or weak ciphers can be exploited.
+
+Web applications behind HTTPS are still susceptible to attacks like XSS or SQL injection if not properly secured.
+
+Mitigations:
+
+Use strong, up-to-date SSL/TLS configurations.
+
+Regularly renew and validate certificates.
+
+Keep web applications and servers patched.
+
